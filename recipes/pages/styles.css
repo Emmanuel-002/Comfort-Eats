@@ -1,0 +1,35 @@
+main{
+    background-color: #fff;
+}
+main article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+main article section{
+  height: max-content;
+  overflow-y: scroll;
+  height: 400px;
+}
+main article figure{
+    width: 100%;
+}
+main section h2,main aside h2{
+    margin-top: 1em !important;
+}
+main section figure details{
+    text-align: justify;
+}
+main section figure figcaption ul{
+    list-style: none;
+}
+main section figure details p,main section figure ul li{
+    margin: 0.5em 0 !important;
+}
+@media all and (max-width:768px){
+    main article{
+        grid-template-columns: 1fr;
+    }
+    main article section{
+        height: max-content;
+    }
+}

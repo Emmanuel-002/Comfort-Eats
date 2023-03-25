@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Eats</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="logo"><a href="#">Comfort Eats</a></div>
+            <nav>
+                <ul class="navbtn">
+                    <li><a href="pages/casserole/casserole.html">Casserole</a></li>
+                    <li><a href="pages/chopped/chopped.html">Chopped</a></li>
+                    <li><a href="pages/creamy/creamy.html">Creamy</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section class="banner">
+                    <p>Everyone loves a good recipe!</p>
+                    <p>You will always get one from us</p>
+                    <h2><em class="tasty">Tasty,</em> <em class="crispy">Crispy</em> And The <em class="best">Best</em>
+                        </h2>
+                </section>
+                <section class="recipe_cards">
+                    <figure id="casserole" onclick="GoToCasserole()">
+                        <img src="assets/images/Cheeseburger-Casserole-01.png" alt="Cheeseburger Casserole">
+                    <figcaption>
+                        <h3>Cheeseburger Casserole</h3>
+                       The best burgers are like life - messy and topped with bacon.
+                    </figcaption>
+                    </figure>
+                    <figure id="chopped"onclick="GoToChopped()">
+                        <img src="assets/images/Chopped-Cheese-01.png" alt="Chopped Cheese">
+                    <figcaption>
+                        <h3>Chopped Cheese</h3>
+                        Love is in the air and it's medium rare.
+                    </figcaption>
+                    </figure>
+                    <figure id="creamy" onclick="GoToCreamy()" >
+                        <img src="assets/images/Creamy-Lima-Beans-01.png" alt="Creamy Southern Lima Beans">
+                    <figcaption>
+                        <h3>Creamy Southern Lima Beans</h3>
+                        The best burger comes from the south.
+                    </figcaption>
+                    </figure>
+                </section>
+            </article>
+        </main>
+    </div>
+    
+    <footer>
+<h2>Contact us</h2>
+<p>Phone | 08060515523 | 08058983817</p>
+<p>Email | emmanuelaraoye794@gmail.com
+<p>Address | Lagos, Nigeria </p><br />
+ <p >&copy; copyright Comfort Eats <span id="year"></span> </p>
+    </footer>
+    <script>
+        const GoToCasserole = ()=>{
+            window.location.href = 'pages/casserole/casserole.html'
+        }
+        const GoToChopped = ()=>{
+            window.location.href = 'pages/chopped/chopped.html'
+        }
+        const GoToCreamy= ()=>{
+            window.location.href = 'pages/creamy/creamy.html'
+        }
+        document.getElementById('year').innerText = new Date().getFullYear();
+     </script>
+</body>
+</html>
